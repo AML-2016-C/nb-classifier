@@ -14,7 +14,7 @@ with open('dataset_v2.csv') as f:
 
 tweets_0=[]
 tweets_1=[]
-for count in range(len(tweets)):
+for count in range(len(tweets)-200):
 	#print type(category[count])
 	if category[count]=='1':
 		tweets_0.append(tweets[count])
@@ -92,7 +92,7 @@ def lookup(tweet):
 hits=0
 
 #print category
-for i in range(len(tweets)):
+for i in range(201):
 	guess = lookup(tweets[i])
 	if guess == category[i]:
 		hits+=1
