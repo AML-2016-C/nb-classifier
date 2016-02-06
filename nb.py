@@ -19,8 +19,10 @@ for count in range(len(tweets)):
 	if category[count]=='1':
 		tweets_0.append(tweets[count])
 	else:
-		category[count]=2
+		category[count]='2'
 		tweets_1.append(tweets[count])
+
+#print category[35]
 
 words_cat0 = []
 words_cat1 = []
